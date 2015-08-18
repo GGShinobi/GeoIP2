@@ -1,0 +1,172 @@
+#################################################################
+# Note: the file "ips.txt" contains 11 (randomly generated) ips:#
+#                                                               #
+# 196.235.55.245                                                #
+# 67.239.168.41                                                 #
+# 89.77.208.82                                                  #
+# 95.28.43.55                                                   #
+# 116.103.179.33                                                #
+# 111.184.182.192                                               #
+# 109.222.171.243                                               #
+# 242.40.67.183                                                 #
+# 20.122.174.86                                                 #
+# 106.87.127.194                                                #
+# 163.81.22.4                                                   #
+#                                                               #
+#################################################################
+
+
+ggshinobi@Shinobi-T420:~$ cat ips.txt | xargs geoIP2.py 
+============================================
+GeoIP2 Info on: 196.235.55.245
+============================================
+<class 'geoip2.errors.AddressNotFoundError'>
+The address 196.235.55.245 is not in the database.
+<traceback object at 0x7f00129de200>
+============================================
+GeoIP2 Info on: 67.239.168.41
+============================================
+City: Kenly 
+Postal Code: 27542
+State: North Carolina  (NC)
+Subdivisions:
+  -> North Carolina(NC) / ノースカロライナ州
+Country: United States (US) / USA / アメリカ合衆国
+Continent: North America / Nordamerika / 北アメリカ
+Coordinates: 35.5963 N -78.1242 E
+Time Zone: America/New_York
+Registered Country: United States ( US )
+============================================
+GeoIP2 Info on: 89.77.208.82
+============================================
+City: None 
+Postal Code: None
+State: None 
+Country: Poland (PL) / Polen / ポーランド共和国
+Continent: Europe / Europa / ヨーロッパ
+Coordinates: 52.2333 N 21.0167 E
+Time Zone: Europe/Warsaw
+Registered Country: Poland ( PL )
+============================================
+GeoIP2 Info on: 95.28.43.55
+============================================
+City: None 
+Postal Code: None
+State: None 
+Country: Russia (RU) / Russland / ロシア
+Continent: Europe / Europa / ヨーロッパ
+Coordinates: 55.75 N 37.6166 E
+Time Zone: None
+Registered Country: Russia ( RU )
+============================================
+GeoIP2 Info on: 116.103.179.33
+============================================
+City: Hanoi / Hanoi / ハノイ
+Postal Code: None
+State: Thanh Pho Ha Noi  (64)
+Subdivisions:
+  -> Thanh Pho Ha Noi(64)
+Country: Vietnam (VN) / Vietnam / ベトナム
+Continent: Asia / Asien / アジア
+Coordinates: 21.0333 N 105.85 E
+Time Zone: Asia/Ho_Chi_Minh
+Registered Country: Vietnam ( VN )
+============================================
+GeoIP2 Info on: 111.184.182.192
+============================================
+City: None 
+Postal Code: None
+State: None 
+Country: Taiwan (TW) / Taiwan / 中華民国
+Continent: Asia / Asien / アジア
+Coordinates: 23.5 N 121.0 E
+Time Zone: Asia/Taipei
+Registered Country: Taiwan ( TW )
+============================================
+GeoIP2 Info on: 109.222.171.243
+============================================
+City: Cardesse 
+Postal Code: 64360
+State: Pyrénées-Atlantiques  (64)
+Subdivisions:
+  -> Aquitaine(B) / Aquitanien / アキテーヌ地域圏
+  -> Pyrénées-Atlantiques(64) / Pyrénées-Atlantiques
+Country: France (FR) / Frankreich / フランス共和国
+Continent: Europe / Europa / ヨーロッパ
+Coordinates: 43.2667 N -0.5833 E
+Time Zone: Europe/Paris
+Registered Country: France ( FR )
+============================================
+GeoIP2 Info on: 242.40.67.183
+============================================
+<class 'geoip2.errors.AddressNotFoundError'>
+The address 242.40.67.183 is not in the database.
+<traceback object at 0x7f00129de320>
+============================================
+GeoIP2 Info on: 20.122.174.86
+============================================
+City: Falls Church  / フォールズチャーチ
+Postal Code: 22042
+State: Virginia  (VA)
+Subdivisions:
+  -> Virginia(VA) / バージニア州
+Country: United States (US) / USA / アメリカ合衆国
+Continent: North America / Nordamerika / 北アメリカ
+Coordinates: 38.864 N -77.1922 E
+Time Zone: America/New_York
+Registered Country: United States ( US )
+============================================
+GeoIP2 Info on: 106.87.127.194
+============================================
+City: Chongqing / Chongqing / 重慶市
+Postal Code: None
+State: Chongqing Shi  (50)
+Subdivisions:
+  -> Chongqing Shi(50)
+Country: China (CN) / China / 中国
+Continent: Asia / Asien / アジア
+Coordinates: 29.5628 N 106.5528 E
+Time Zone: Asia/Shanghai
+Registered Country: China ( CN )
+============================================
+GeoIP2 Info on: 163.81.22.4
+============================================
+City: None 
+Postal Code: None
+State: None 
+Country: France (FR) / Frankreich / フランス共和国
+Continent: Europe / Europa / ヨーロッパ
+Coordinates: 48.86 N 2.35 E
+Time Zone: Europe/Paris
+Registered Country: France ( FR )
+ggshinobi@Shinobi-T420:~$ geoIP2.py 12.33.111.22
+============================================
+GeoIP2 Info on: 12.33.111.22
+============================================
+City: None 
+Postal Code: None
+State: None 
+Country: United States (US) / USA / アメリカ合衆国
+Continent: North America / Nordamerika / 北アメリカ
+Coordinates: 38.0 N -97.0 E
+Time Zone: None
+Registered Country: United States ( US )
+ggshinobi@Shinobi-T420:~$ geoIP2.py 12.33.111.22 313
+============================================
+GeoIP2 Info on: 12.33.111.22
+============================================
+City: None 
+Postal Code: None
+State: None 
+Country: United States (US) / USA / アメリカ合衆国
+Continent: North America / Nordamerika / 北アメリカ
+Coordinates: 38.0 N -97.0 E
+Time Zone: None
+Registered Country: United States ( US )
+============================================
+GeoIP2 Info on: 313
+============================================
+<type 'exceptions.ValueError'>
+'313' does not appear to be an IPv4 or IPv6 address
+<traceback object at 0x7f91015dc3f8>
+ggshinobi@Shinobi-T420:~$
