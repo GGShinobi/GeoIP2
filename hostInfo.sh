@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# hostInfo.sh ver 0.0.1
+# hostInfo.sh ver 0.0.2
 #
 # Since the old, free version of maxminds' database has some info that
 # the new version has not, it might be a good idea to query it also
@@ -35,12 +35,10 @@ if [ $? -eq 0 ]; then
   geoiplookupAvailable=true
   [ -f $cityEdition ] && cityEditionAvailable=true
 fi
-echo "geoiplookupAvailable=$geoiplookupAvailable"
 
 unset hostAvailable
 host localhost &> /dev/null
 [ $? -eq 0 ] && hostAvailable=true
-echo "hostAvailable=$hostAvailable"
 
 for host in $*; do
   if [[ $host =~ ^[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}$ ]]; then
